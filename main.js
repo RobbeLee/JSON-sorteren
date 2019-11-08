@@ -70,12 +70,12 @@ let sortBookObj = {
                     <img src=` + data[i].cover + `>
                 </div>
                 <div class="bookItem__info">
-                    <h3>`+  data[i].titel + `</h3>
-                    <p>` + data[i].auteur + `</p>
-                    <p>` + data[i].uitgave + `</p>
-                    <p>` + data[i].paginas + `</p>
-                    <p>` + data[i].taal + `</p>
-                    <p>` + data[i].ean + `</p>
+                    <h3 class="bookItem__title">`+  data[i].titel + `</h3>
+                    <p class="bookItem__p">` + "geschreven door: <span>" + data[i].auteur + "</span>" + `</p>
+                    <p class="bookItem__p">` + "uitgegeven in: <span>" +data[i].uitgave + "</span>" + `</p>
+                    <p class="bookItem__p">` + "het boek heeft <span>" + data[i].paginas + "</span> paginas" + `</p>
+                    <p class="bookItem__p">` + "taal: <span>" + data[i].taal + "</span>" + `</p>
+                    <p class="bookItem__p">` + "EAN: <span>" + data[i].ean + "</span>" + `</p>
                 </div>
             </div>`;
         }

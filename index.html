@@ -10,19 +10,23 @@
     <body>
         <div class="wrapper">
             <h1 class="title">Boeken!</h1>
-            <select id="feature">
-                <option value="titel">Titel</option>
-                <option value="auteur">Auteur</option>
-                <option value="adDate">Datum uitgave</option>
-                <option value="paginas">Aantal bladzijden</option>
-                <option value="taal">Taal</option>
-            </select>
-            <label>
-                <input type="radio" name="opgaand" value="1">Opgaand
-            </label>
-            <label>
-                <input type="radio" name="opgaand" value="-1">afgaand
-            </label>
+            <div class="selectie">
+                <select id="feature" class="selectie__options">
+                    <option value="titel">Titel</option>
+                    <option value="auteur">Auteur</option>
+                    <option value="adDate">Datum uitgave</option>
+                    <option value="paginas">Aantal bladzijden</option>
+                    <option value="taal">Taal</option>
+                </select>
+                <div class="selectie__btns">
+                    <label>
+                        <input type="radio" name="opgaand" value="1">Opgaand
+                    </label>
+                    <label>
+                        <input type="radio" name="opgaand" value="-1">Afgaand
+                    </label>
+                </div>
+            </div>
             <div id="boeken"></div>
             </div>
             <footer>
